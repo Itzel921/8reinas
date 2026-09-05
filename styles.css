@@ -1,0 +1,33 @@
+table{
+    border-collapse: collapse;
+    width: 400px; /* Solo esta propiedad se aplica a las tabla */
+}
+
+td{
+    border: 1px solid black;
+    height: 50px; /*esta propiedad se aplica a las celdas */
+}
+
+tr:nth-child(even) td:nth-child(even), /*"even" par y "odd" impar */
+tr:nth-child(odd) td:nth-child(odd){
+    background-color: black;
+}
+
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd){
+    background-color: rgba(170, 152, 250, 0.441);
+}
+
+
+#reinasContador{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+#pganador{
+  font-size: 48px;
+  color: rgb(20, 18, 18);
+  text-align: center;
+}
